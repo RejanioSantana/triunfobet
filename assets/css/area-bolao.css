@@ -1,0 +1,70 @@
+.nav-bolao{
+    position: relative;
+    display: flex;
+    top: 1vh;
+    height: 4vh;
+    list-style: none;
+    }
+.btn-type-apost{
+    display: block;
+    height: 100%;
+    width: 10vh;
+
+}
+.nav-bolao li a{
+    display: flex;
+    background-color: #426fc4;
+    color: #FFF;
+    height: 99%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-top-right-radius: 0.3em;
+    border-top-left-radius:0;
+    
+}
+.btn-type-apost.hidden a{
+    background-color: rgb(142, 158, 189);
+}
+/* area */
+.area-bolao{
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    border:#426fc4 1px solid ;
+    border-bottom: none;
+    top: 0.8vh;
+    height: 86vh;
+    padding: 1vh;
+}
+/* tabela */
+.tb-status-bolao{
+    position: relative;
+    display: flex;
+    background-color: bisque;
+    width: 100%;
+    height: 50vh;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.tb-status-bolao thead{
+    display: flex ;
+    width: 100%;
+    height: 10%;
+    background-color: aqua;
+    justify-content: center;
+    align-items: center;
+}
+    
+.tb-status-bolao tbody{
+    background-color: #426fc4;
+    height: 90%;
+    width: 100%;
+}
+.tb-status-bolao thead th{
+    display: inline-block;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
+    background-color: aquamarine;
+}
+
