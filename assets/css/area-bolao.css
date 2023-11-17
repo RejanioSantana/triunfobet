@@ -37,34 +37,107 @@
     height: 86vh;
     padding: 1vh;
 }
+/* Cabeçalho */
+.info{display: flex;margin-bottom: 1vh;}
+.info h2{margin-right: auto;}
+.info button{
+    background-color:#5bc0de;
+    border:none;
+    padding: 1.5%;
+    border-radius: 0.2em;
+    color: #FFF;
+}
 /* tabela */
 .tb-status-bolao{
     position: relative;
-    display: flex;
-    background-color: bisque;
-    width: 100%;
-    height: 50vh;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: block;
+    background-color: #e6e6e6be;
+    width: 96%;
+    padding: 1%;
+    border: none;
+    border-radius: 1vh;
+    height: 30vh;
 }
 .tb-status-bolao thead{
-    display: flex ;
+    display: block;
     width: 100%;
-    height: 10%;
-    background-color: aqua;
-    justify-content: center;
-    align-items: center;
+;
+}
+.tb-status-bolao thead tr{
+    display: flex;
+    width: 100%;
+
+}
+.tb-status-bolao thead th{
+    display: block;
+    text-align: center;
+    width:94% ;
+    padding: 1%;
+    border-bottom: 0.1vh solid #333;
+    
 }
     
 .tb-status-bolao tbody{
-    background-color: #426fc4;
-    height: 90%;
+    display: block;
     width: 100%;
 }
-.tb-status-bolao thead th{
-    display: inline-block;
-    font-family: 'Courier New', Courier, monospace;
-    text-align: left;
-    background-color: aquamarine;
+.tb-status-bolao tbody tr{
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid #99999988;
 }
-
+.tb-status-bolao tbody td{
+    display: block;
+    text-align: center;
+    width:94% ;
+    padding: 1%;
+    
+}
+/* form aposta */
+.div-form-apostar{
+    position:relative;
+    top: 1vh;
+}
+.area-info-apost{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.area-info-apost .info-apost{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5vh;
+}
+.up-apost ,.qtd-apost, .down-apost{
+    border: 1px solid #777	;
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    color: #5cb85c;
+    font-weight:400;
+    font-family:sans-serif;
+}
+.qtd-apost{
+    border: none;
+    color: #333;
+    font-weight:400;
+    font-size: 1.5em;
+}
+.div-form-apostar form {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1vh;
+}
+#btn-apostar{
+    background-color: #5cb85c;
+    width: 20vh;
+    padding: 0.8vh 1vh;
+    border: none;
+    border-radius: 0.2em;
+    font-size: 1.1em;
+    color: #FFF;
+}
