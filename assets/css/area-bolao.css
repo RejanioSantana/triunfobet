@@ -1,39 +1,10 @@
-.nav-bolao{
-    position: relative;
-    display: flex;
-    top: 1vh;
-    height: 4vh;
-    list-style: none;
-    }
-.btn-type-apost{
-    display: block;
-    height: 100%;
-    width: 10vh;
-
-}
-.nav-bolao li a{
-    display: flex;
-    background-color: #426fc4;
-    color: #FFF;
-    height: 99%;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    border-top-right-radius: 0.3em;
-    border-top-left-radius:0;
-    
-}
-.btn-type-apost.hidden a{
-    background-color: rgb(142, 158, 189);
-}
 /* area */
 .area-bolao{
     position: relative;
     background-color: rgb(255, 255, 255);
-    border:#426fc4 1px solid ;
-    border-bottom: none;
-    top: 0.8vh;
+    border:none;
+    border-radius: 0.7em;
+    top: 1vh;
     height: 86vh;
     padding: 1vh;
 }
@@ -52,7 +23,7 @@
     position: relative;
     display: block;
     background-color: #e6e6e6be;
-    width: 96%;
+    width: 100%;
     padding: 1%;
     border: none;
     border-radius: 1vh;
@@ -61,7 +32,6 @@
 .tb-status-bolao thead{
     display: block;
     width: 100%;
-;
 }
 .tb-status-bolao thead tr{
     display: flex;
@@ -93,10 +63,55 @@
     padding: 1%;
     
 }
+.tb-status-bolao tfoot{
+    position: absolute;
+    display: block;
+    width:100%;
+    bottom: 0;
+    background-color: #ffffff;
+    right: 0;
+}
+.tb-status-bolao tfoot tr{
+    display: flex;
+    width: 98%;
+    /* border-bottom: 1px solid #99999988; */
+}
+.tb-status-bolao tfoot th,td{
+    display: block;
+    text-align: center;
+    width:94% ;
+    padding: 1%;
+    
+}
+.tb-status-bolao tfoot th{color: #444;}
 /* form aposta */
+    /* selecoes info */
+.selecoes-info{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.selecoes-info h3{
+
+    display: block;
+    width: 50%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 0.5vh;
+
+}
+    /* btn plcar */
 .div-form-apostar{
     position:relative;
-    top: 1vh;
+    top: 2vh;
+}
+.div-form-apostar h2{
+    text-align: center;
+    margin-bottom: 1.5vh;
+    color: #0275d8;
+    text-shadow: 1px 2px 5px #7a7a7acf;
 }
 .area-info-apost{
     display: flex;
@@ -119,6 +134,14 @@
     font-weight:400;
     font-family:sans-serif;
 }
+.up-apost , .down-apost{
+    box-shadow: -1px 1px  5px #99999971;
+    border-radius: 0.1em;
+}
+.up-apost:active, .down-apost:active{
+    background-color: #0275d8;
+    color: #fff;
+}
 .qtd-apost{
     border: none;
     color: #333;
@@ -140,4 +163,72 @@
     border-radius: 0.2em;
     font-size: 1.1em;
     color: #FFF;
+    box-shadow: -1px 1px 6px #999;
 }
+#btn-apostar:active{
+    background-color: #59b059;
+}
+/* modal-bet */
+.modal-bet{
+    position: fixed;
+    top: 50%;
+    background-color: #ffffff;
+    z-index: 10;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 28vh;
+    padding: 5vh;
+    box-shadow: -1px 1px 6px #999;
+    pointer-events: all;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 0.3em;
+    
+}
+.modal-bet.hidden{
+    opacity: 0;
+    pointer-events: none;
+}
+.modal-bet form{
+    width: 100%;
+    height: 100%;
+}
+.modal-bet ul li{
+    display: flex;
+    margin-bottom: 0.8vh;
+    font-size:1.15em ; 
+}
+.modal-bet ul li ul{display: flex; margin-left: auto;}
+.modal-bet .li-tr{border-bottom: 1px solid #999999a8;}
+#btn-confirmar{
+    background-color: #5cb85c;
+    width: 100%;
+    padding: 0.8vh 1vh;
+    border: none;
+    border-radius: 0.2em;
+    font-size: 1.1em;
+    color: #FFF;
+    box-shadow: -1px 1px 6px #999;
+    margin-top: 1.20vh;
+}
+.qtd-modal-bet,.down-modal-bet,.up-modal-bet{
+    margin: 0 0.5em;
+    background-color: #777;
+    color: #FFF;
+    padding: 0.1em 0.5em;
+    
+}
+.down-modal-bet,.up-modal-bet{box-shadow: -1px 1px 3px #999;}
+.qtd-modal-bet{
+    background-color: #FFF;
+    color: #333;
+    margin: auto;
+
+}
+.down-modal-bet:active,.up-modal-bet:active{
+    background-color: #0275d8;
+    color: #fff;
+}
+#btn-confirmar:active{background-color: #59b059;}
