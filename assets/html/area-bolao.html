@@ -1,22 +1,23 @@
+<div class="fade-bolao hidden"></div>
 <div class="modal-bet hidden">
     <form method="post">
         <input type="hidden" name="mld-bolao" value="10">
         <input type="hidden" name="client-id" value="027">
-        <input type="hidden" name="vlr-apost" value="10">
-        <input type="hidden" name="qtd-casa" value="2">
-        <input type="hidden" name="qtd-fora" value="1">
+        <input type="hidden" name="vlr-apost" id="frm-vlr-bolao" value="10">
+        <input type="hidden" name="qtd-casa" id="frm-casa" value="2">
+        <input type="hidden" name="qtd-fora" id="frm-fora" value="1">
         <ul>
             <li class="li-tr">Placar <ul>
-                <li> 0 x 0 </li>
+                <li id="frm-placar"></li>
             </ul></li>
             <li class="li-tr">Qtd <ul>
                 <li class="down-modal-bet">-</li>
-                <li class="qtd-modal-bet">2</li>
+                <li class="qtd-modal-bet"></li>
                 <li class="up-modal-bet">+</li>
             </ul></li>
             
             <li class="li-tr">Total <ul>
-                <li>R$ 20,00</li>
+                <li id="total-modal-bet">R$ 20,00</li>
             </ul></li>
         </ul>
         <input type="submit" value="Confirmar" id="btn-confirmar">
@@ -77,13 +78,13 @@
                 <div class="area-info-apost">
                     <div class="info-apost casa">
                         <div class="down-apost">-</div>
-                        <div class="qtd-apost">0</div>
+                        <div class="qtd-apost" id="num-casa">0</div>
                         <div class="up-apost">+</div>
         
                     </div>
                     <div class="info-apost fora">
                         <div class="down-apost">-</div>
-                        <div class="qtd-apost">0</div>
+                        <div class="qtd-apost" id="num-fora">0</div>
                         <div class="up-apost">+</div>
                     </div>
                 </div>
