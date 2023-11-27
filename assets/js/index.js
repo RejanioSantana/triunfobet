@@ -33,9 +33,12 @@ if(btn_section_jg.classList.contains("action")){
         e.target;
         if(e.classList.contains('btn-section-jogos')){
             addSectionJogos(e)
-            if(e.classList.contains("action")){
-                return
-            }
+            if(e.classList.contains("action")){return}
+            toggleSection();
+        }
+        if(e.classList.contains('btn-section-apostas')){
+            addSectionMinhasApostas(e)
+            if(e.classList.contains("action")){return}
             toggleSection();
         }
     });
@@ -48,11 +51,11 @@ async function addSectionJogos(e){
     script.async = true;
     document.body.appendChild(script);
 }
-async function addDependenciasSectionJogos(e){
+async function addSectionMinhasApostas(e){
     await carregarSection(e);
     reniciandoDependencias();
     script = document.createElement('script');
-    script.src = 'assets/js/dependencias-section-jogos.js';
+    script.src = 'assets/js/minhas-apostas.js';
     script.async = true;
     document.body.appendChild(script);
 }

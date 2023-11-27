@@ -1,0 +1,49 @@
+#listing-my-bets{margin-top: 2vh;}
+.list-bets{
+    display: flex;
+    width: 98%;
+    background-color: #FFF;
+    margin-bottom: 1vh;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    padding: 4% 1%;
+    border: none;
+    border-radius: 0.20em;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.11);
+    transition: 0.5s;
+}
+.list-bets:active{background-color: #f2f2f2;}
+.list-bets li{ width: 25%;font-size: 1.3em;}
+.list-bets.info{border: 1px solid #f0ad4e;}
+.list-bets.won{border: 1px solid #5cb85c;}
+.list-bets.lost{border: 1px solid #d9534f;}
+.list-bets.block{
+    border: 1px solid #bababa;
+    color: #bababa;
+}
+.list-bets .icon-pending{
+    color: #333;
+    font-size: 1.5em;
+    margin-left: 0.2em;
+}
+.list-bets .icon-info{
+    color: #f0ad4e;
+    font-size: 1.5em;
+    margin-left: 0.2em;
+}
+.list-bets .icon-won{
+    color: #5cb85c;
+    font-size: 1.5em;
+    margin-left: 0.2em;
+}
+.list-bets .icon-lost{
+    color: #d9534f;
+    font-size: 1.5em;
+    margin-left: 0.2em;
+}
+.list-bets .icon-block{
+    color: #bababa;
+    font-size: 1.5em;
+    margin-left: 0.2em;
+}
