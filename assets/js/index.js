@@ -55,7 +55,7 @@ async function addSectionMinhasApostas(e){
     await carregarSection(e);
     reniciandoDependencias();
     script = document.createElement('script');
-    script.src = 'assets/js/minhas-apostas.js';
+    script.src = 'assets/js/my-bets.js';
     script.async = true;
     document.body.appendChild(script);
 }
