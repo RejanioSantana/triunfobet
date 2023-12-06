@@ -4,38 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Triunfo Bet</title>
+    <link rel="stylesheet" href="../css/my-account.css">
 </head>
 <body>
-    <header><h1><a href="">Triunfo Bet</a></h1></header>
+    <header><h1><a href="../../index.html">Triunfo Bet</a></h1></header>
     <main>
-        <form  method="post">
-            <h3>Dados Pessoais</h3>
-            <label for="name">Nome</label>
-            <input type="text" name="name" id="name" placeholder="Ex: André">
-            <label for="last-name">Sobrenome</label>
-            <input type="text" name="last-name" id="last-name" placeholder="Ex: S Andrade">
-            <label for="cpf">Cpf</label>
-            <input type="text" name="cpf" id="cpf" placeholder="Ex: S Andrade">
-            <label for="city">Cidade</label>
-            <input type="text" name="city" id="city" placeholder="Ex: S Andrade">
-            <label for="cep">Cep</label>
-            <input type="text" name="cep" id="cep">
-            <label for="phone">Telefone</label>
-            <input type="text" name="phone" id="phone">
-            <label for="email">Email</label>
-            <input type="text" name="email" id="email">
-            <h3>Dados Bancarios</h3>
-            <label for="institution">Instituição</label>
-            <input type="text" name="institution" id="institution">
-            <label for="agency">Agência</label>
-            <input type="text" name="agency" id="agency">
-            <label for="account">Conta</label>
-            <input type="text" name="account" id="account">
-            <label for="type">Tipo de Conta</label>
-            <input type="text" name="type" id="type">
-            <label for="pix">Pix</label>
-            <input type="text" name="pix" id="pix">
-            <input type="submit" value="Salvar">
+        <form method="post">
+            <section class="profile">
+                <h3>Perfil</h3>
+                <label for="user">Usuário</label>
+                <input type="text" value="@MariaElis" disabled>
+                <div id="btnAlterar">Alterar</div>
+            </section>
+            <section class="personalData">
+                <h3>Dados Pessoais</h3>
+                <label for="name">Nome</label>
+                <input type="text" name="name" id="name" 
+                value="Maria Elís" disabled>
+
+                <label for="last-name">Sobrenome</label>
+                <input type="text" name="last-name" id="last-name" 
+                value="Santana Cavalcante" disabled>
+
+                <label for="cpf">Cpf</label>
+                <input type="text" name="cpf" id="cpf"  
+                value="000.000.000-00" disabled>
+
+                <label for="city">Cidade</label>
+                <input type="text" name="city" id="city" 
+                value="Quijingue-Ba" required>
+
+                <label for="cep">Cep</label>
+                <input type="text" name="cep" id="cep" 
+                value="48.830-000" required>
+
+                <label for="phone">Telefone</label>
+                <input type="tel" name="phone" id="phone" 
+                placeholder="(99)99999-9999" 
+                pattern="[0-9]{11}" required>
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" 
+                placeholder="email@exemplo.com" disabled>
+            </section>
+            <section class="profile">
+                <h3>Dados Bancarios</h3>
+                <label for="institution">Instituição</label>
+                <select name="institution" id="institution" required>
+                    <option value="">Selecione a instituição</option>
+                    <option value="">Banco Bradesco</option>
+                    <option value="">Banco do Brasil</option>
+                    <option value="">Caixa Economica Federal</option>
+                    <option value="">Banco Pan</option>
+                </select>
+
+                <label for="agency">Agência</label>
+                <input type="text" name="agency" id="agency" pattern="[0-9]">
+    
+                <label for="account">Conta</label>
+                <input type="text" name="account" id="account"  pattern="[0-9]">
+    
+                <fieldset>
+                    <legend>Tipo de Conta</legend>
+
+                    <input type="radio" name="typeAccount"
+                    id="typeAccount" value="poupanca">
+                    <label for="typeAccount">Conta Poupança</label>
+
+                    <input type="radio" name="typeAccount"
+                    id="typeAccount" value="corrente">
+                    <label for="typeAccount">Conta Corrente</label>
+                    <input type="radio" name="typeAccount"
+                    id="typeAccount" value="conjunta">
+                    <label for="typeAccount">Corrente/Poupança</label>
+                </fieldset>
+    
+                <label for="pix">Pix</label>
+                <input type="text" name="pix" id="pix" placeholder="Sua chave Pix">
+
+            </section>
+            <div id="btnOptions">
+                <a href="../../index.html">Voltar</a>
+                <input type="submit" value="Salvar">
+            </div>
         </form>
     </main>
 </body>

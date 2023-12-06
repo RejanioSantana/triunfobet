@@ -1,0 +1,47 @@
+*{margin: 0;padding: 0;}
+@font-face {
+    font-family:'Ubuntu' ;
+    src: url('../fonts/Ubuntu-Regular.ttf');
+}
+header{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 7vh;
+    background-color: #232323f8;
+    color: aliceblue;
+    align-items: center;
+    justify-content: center;
+    padding: 1vh;
+    z-index: 2;
+}
+header h1 a{
+    color: #FFF;
+    font-family: 'Ubuntu';
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    width: 100%;
+    text-decoration: none;
+}
+main{
+    display:flex;
+    position: relative;
+    width: 100%;
+    top: 10vh;
+    justify-content: center;
+}
+main form{
+    width: 97%;
+}
+main form section{
+    display:block;
+    text-align: center;
+    max-width: 100%;
+    box-shadow: 0 0 2px 2px #f3f3f3;
+    margin-bottom: 1vh;
+}
+main form section h3,input,label{
+    display: inline-block;
+    text-align: center;
+    width: 90%;
+}
