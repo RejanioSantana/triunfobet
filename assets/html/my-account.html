@@ -12,44 +12,42 @@
         <form method="post">
             <section class="profile">
                 <h3>Perfil</h3>
-                <label for="user">Usuário</label>
-                <input type="text" value="@MariaElis" disabled>
+                <label for="user">Usuário<span>*</span></label>
+                <input type="text" value="@MariaElis" class="inp disabled" disabled>
                 <div id="btnAlterar">Alterar</div>
             </section>
             <section class="personalData">
                 <h3>Dados Pessoais</h3>
                 <label for="name">Nome</label>
                 <input type="text" name="name" id="name" 
-                value="Maria Elís" disabled>
+                value="Maria Elís" class="inp disabled" disabled>
 
                 <label for="last-name">Sobrenome</label>
                 <input type="text" name="last-name" id="last-name" 
-                value="Santana Cavalcante" disabled>
+                value="Santana Cavalcante" class="inp disabled" disabled>
 
                 <label for="cpf">Cpf</label>
                 <input type="text" name="cpf" id="cpf"  
-                value="000.000.000-00" disabled>
+                value="000.000.000-00" class="inp disabled" disabled>
 
                 <label for="city">Cidade</label>
-                <input type="text" name="city" id="city" 
-                value="Quijingue-Ba" required>
+                <input type="text" name="city" id="city" class="inp" required>
 
                 <label for="cep">Cep</label>
-                <input type="text" name="cep" id="cep" 
-                value="48.830-000" required>
+                <input type="text" name="cep" id="cep" class="inp" required>
 
-                <label for="phone">Telefone</label>
+                <label for="phone">Telefone<span class="span-erro">*</span></label>
                 <input type="tel" name="phone" id="phone" 
-                placeholder="(99)99999-9999" 
-                pattern="[0-9]{11}" required>
+                pattern="[0-9]{11}" class="inp erro" required>
 
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" 
-                placeholder="email@exemplo.com" disabled>
+                <label for="email">Email<span>*</span></label>
+                <input type="email" name="email" id="email"
+                placeholder="email@exemplo.com" 
+                class="inp disabled" disabled>
             </section>
             <section class="profile">
                 <h3>Dados Bancarios</h3>
-                <label for="institution">Instituição</label>
+                <label for="institution">Instituição<span>*</span></label>
                 <select name="institution" id="institution" required>
                     <option value="">Selecione a instituição</option>
                     <option value="">Banco Bradesco</option>
@@ -58,34 +56,41 @@
                     <option value="">Banco Pan</option>
                 </select>
 
-                <label for="agency">Agência</label>
-                <input type="text" name="agency" id="agency" pattern="[0-9]">
+                <label for="agency">Agência<span>*</span></label>
+                <input type="text" name="agency" id="agency"
+                pattern="[0-9]" class="inp" required>
     
-                <label for="account">Conta</label>
-                <input type="text" name="account" id="account"  pattern="[0-9]">
+                <label for="account">Conta<span>*</span></label>
+                <input type="text" name="account" id="account"
+                pattern="[0-9]" class="inp" required>
     
                 <fieldset>
-                    <legend>Tipo de Conta</legend>
-
-                    <input type="radio" name="typeAccount"
-                    id="typeAccount" value="poupanca">
-                    <label for="typeAccount">Conta Poupança</label>
-
-                    <input type="radio" name="typeAccount"
-                    id="typeAccount" value="corrente">
-                    <label for="typeAccount">Conta Corrente</label>
-                    <input type="radio" name="typeAccount"
-                    id="typeAccount" value="conjunta">
-                    <label for="typeAccount">Corrente/Poupança</label>
+                    <legend>Tipo de Conta <span>*</span></legend>
+                    <div class="sec-radio">
+                        <input type="radio" name="typeAccount"
+                        id="radPoup" value="poupanca">
+                        <label for="radPoup">Conta Poupança</label>
+                    </div>
+                    <div class="sec-radio">
+                        <input type="radio" name="typeAccount"
+                        id="radCorr" value="corrente">
+                        <label for="radCorr">Conta Corrente</label>
+                    </div>
+                    <div class="sec-radio">
+                        <input type="radio" name="typeAccount"
+                        id="radCorrPoup" value="conjunta">
+                        <label for="radCorrPoup">Corrente/Poupança</label>
+                    </div>
                 </fieldset>
     
-                <label for="pix">Pix</label>
-                <input type="text" name="pix" id="pix" placeholder="Sua chave Pix">
+                <label for="pix">Pix<span >*</span></label>
+                <input type="text" name="pix" id="pix" 
+                placeholder="Sua chave Pix..." class="inp" required>
 
             </section>
             <div id="btnOptions">
-                <a href="../../index.html">Voltar</a>
-                <input type="submit" value="Salvar">
+                <a href="../../index.html" class="btn back">Voltar</a>
+                <button class="btn">Salvar</button>
             </div>
         </form>
     </main>

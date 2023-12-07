@@ -40,8 +40,103 @@ main form section{
     box-shadow: 0 0 2px 2px #f3f3f3;
     margin-bottom: 1vh;
 }
-main form section h3,input,label{
-    display: inline-block;
+main form section h3,input,label,select,fieldset{
+    display: block;
     text-align: center;
-    width: 90%;
+    margin: auto;
+    width: 85%;
+    font-size: 1.3em;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 1.3vh;
 }
+main form section{
+    padding: 2% 0%;
+}
+label{text-align: left; text-transform: uppercase;padding-left: 2%;}
+
+.inp{
+    padding: 1%;
+    border: 1px solid #5bc0de;
+    border-radius: 0.5em;
+}
+span{color: #5bc0de;}
+.inp.disabled{border: none;}
+fieldset{border: none; text-align: left;padding-top: 1vh;}
+fieldset .sec-radio{font-size: 0.7em;}
+.sec-radio input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+  }
+.sec-radio label {
+    cursor: pointer;
+    padding: 5px 20px;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+    display: inline-block;
+    position: relative;
+  }
+.sec-radio  label::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 4px;
+    transform: translate(-50%, -50%);
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: white;
+    border: 1px solid #ccc;
+  }
+ .sec-radio input:checked + label::before {
+    background-color: #21b4d0;
+    border-color: #21b4d0;
+  }
+  .sec-radio input:checked + label::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 4px;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+  }
+#btnOptions{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+}
+
+#btnOptions .btn{
+    display: flex;
+    background-color: #04AA6D;
+    color: white;
+    width: 40%;
+    text-decoration: none;
+    padding: 1vh;
+    margin: auto;
+    border: none;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.2em;
+    font-size: 1.2em;
+}
+#btnOptions .btn:disabled{
+    background-color: #CCCCCC; /* Cor de fundo para estado desabilitado */
+    cursor: not-allowed; /* Cursor como sinal de proibido */
+}
+#btnOptions .btn:hover{background-color: #067A4D;}
+#btnOptions .btn.back{
+    background-color: #FFF;
+    color: #666;
+    border: 1px solid #999;
+}
+.inp.erro{
+    border: 1px solid #d9534f;
+}
+.span-erro{color:#d9534f ;}
