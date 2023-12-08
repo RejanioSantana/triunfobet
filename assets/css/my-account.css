@@ -54,6 +54,7 @@ main form section{
 }
 label{text-align: left; text-transform: uppercase;padding-left: 2%;}
 
+select{padding: 1%;border-radius: 0.5em;font-size: 0.99em;}
 .inp{
     padding: 1%;
     border: 1px solid #5bc0de;
@@ -110,13 +111,31 @@ fieldset .sec-radio{font-size: 0.7em;}
     margin-bottom: 2vh;
     margin-top: 2vh;
 }
-
+#btnAlterar{
+    display: flex;
+    background-color: #0275d8;
+    color: white;
+    width: 30%;
+    box-shadow: 0 0 0.6vh 0.1vh #777777da;
+    text-decoration: none;
+    padding: 1vh;
+    margin: auto;
+    border: none;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.2em;
+    font-size: 1.2em;
+}
+#btnAlterar:active{background-color:#026bc6 ;}
 #btnOptions .btn{
     display: flex;
     background-color: #04AA6D;
     color: white;
     width: 40%;
     text-decoration: none;
+    box-shadow: 0 0 0.6vh 0.1vh #777777da;
+
     padding: 1vh;
     margin: auto;
     border: none;
@@ -135,6 +154,7 @@ fieldset .sec-radio{font-size: 0.7em;}
     background-color: #FFF;
     color: #666;
     border: 1px solid #999;
+    box-shadow: none;
 }
 .inp.erro{
     border: 1px solid #d9534f;
