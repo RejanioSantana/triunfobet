@@ -1,0 +1,119 @@
+*{margin: 0;padding: 0;}
+@font-face {
+    font-family:'Ubuntu' ;
+    src: url('../fonts/Ubuntu-Regular.ttf');
+}
+header{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 7vh;
+    background-color: #232323f8;
+    color: aliceblue;
+    align-items: center;
+    justify-content: center;
+    padding: 1vh;
+    z-index: 2;
+}
+header h1 a{
+    color: #FFF;
+    font-family: 'Ubuntu';
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    width: 100%;
+    text-decoration: none;
+}
+main{
+    display:flex;
+    font-family: 'Ubuntu';
+    position: relative;
+    width: 100%;
+    top: 10vh;
+    justify-content: center;
+}
+main #conteudo{
+    width: 92%;
+    padding: 2%;
+    box-shadow: 0 0 0.8vh 0.1vh #999;
+}
+#moneyInfo{
+    display: flex;
+    margin-bottom: 5vh;
+    align-items: center;
+}
+#withdrawalHistory{
+    background-color:#5bc0de ;
+    margin-left: auto;
+    padding: 0.7vh 0.9vh;
+    color: #f3f3f3;
+    border-radius: 0.3em;
+    box-shadow: 0 0 0.8vh 0.1vh #999999cb;
+}
+#withdrawalHistory:active{background-color:#54b2cf;}
+.withdrawMoney input,label,p{
+    display: block;
+    margin: auto;
+    margin-bottom: 1vh;
+    width: 100%;
+}
+.withdrawMoney{width: 100%;}
+.withdrawMoney label{
+    text-transform: uppercase;
+    font-size: 0.8em;
+
+}
+.withdrawMoney input{
+    width: 97%;
+    padding: 0.4em 0.2em;
+}
+.withdrawMoney p{
+    text-align: right;
+    font-size: 0.8em;
+    color: #555;
+}
+#btn{
+    background-color: #5cb85c;
+    border: none;
+    box-shadow: 0 0 0.8vh 0vh #999999cb;
+    color: #f3f3f3;
+
+}
+#btn:active{background-color: #53a753;}
+
+#fadeInfoSaque{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #2222229f;
+    z-index: 8;
+    pointer-events: all;
+}
+#modalInfoSaque{
+    position: fixed;
+    display: block;
+    width: 45vh;
+    height: 10vh;
+    z-index: 10;
+    top: 20vh;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #FFF;
+    font-family: 'Ubuntu';
+    display: flex;
+    justify-content: center;
+    border: none;
+    border-radius: 1.1em;
+    pointer-events: all;
+}
+#fadeInfoSaque.hidden , #modalInfoSaque.hidden{
+    opacity: 0;
+    pointer-events: none;
+}
+
+#header-modal{width: 100%;
+    height: 4vh;
+    text-align: right;
+    padding-right: 2vh;
+    font-size: 2em;
+    color: #5555557a;
+}

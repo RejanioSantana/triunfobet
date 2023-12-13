@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triunfo Bet</title>
+    <link rel="stylesheet" href="../css/withdraw.css">
+</head>
+<body>
+    <div id="fadeInfoSaque" class="hidden"></div>
+    <div id="modalInfoSaque" class="hidden">
+        <div id="header-modal"><span id="btn-closeModal">x</span></div>
+    </div>
+    <header><h1><a href="../../index.html">Triunfo Bet</a></h1></header>
+    <main>
+        <div id="conteudo">
+            <section id="moneyInfo">
+                <h3>Saldo: <span id="money">R$ 45,00</span></h3>
+                <div id="withdrawalHistory">Saques</div>
+            </section>
+            <section class="withdrawMoney">
+                <form action="">
+                    <label for="">Valor de Saque</label>
+                    <input type="text" pattern="[0-9]*" required>
+                    <p>Max: R$1500</p>
+                    <input type="submit" id="btn" value="Sacar">
+                </form>
+            </section>
+        </div>
+    </main>
+    <script src="./../js/withdraw.js"></script>
+</body>
+</html>
