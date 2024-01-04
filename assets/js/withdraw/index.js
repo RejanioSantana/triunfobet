@@ -1,4 +1,11 @@
-document.addEventListener('click',e => e.preventDefault());
+document.addEventListener('click',e =>{
+     e.preventDefault()
+    if( e.target.tagName == "A"){
+       var href =  e.target.getAttribute('href')
+       window.location.href = href
+
+    }
+    });
 var btnForm = document.getElementById('btn');
 var btnHist = document.getElementById('withdrawalHistory');
 var fade = document.getElementById('fadeInfoSaque');

@@ -6,7 +6,7 @@ async function sectionBolao(e){
     await carregarSection(e);
     reniciandoDependencias();
     script = document.createElement('script');
-    script.src = 'assets/js/bolao.js';
+    script.src = 'assets/js/bets/_bets/index.js';
     script.async = true;
     document.body.appendChild(script);
 }

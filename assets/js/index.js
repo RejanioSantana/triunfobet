@@ -1,6 +1,7 @@
 document.addEventListener('click',e =>{
     e.preventDefault();
 });
+
 const btn_login_header = document.querySelector(".login-header");
 const fade = document.querySelector(".fade");
 const fade_menu = document.querySelector(".fade-menu");
@@ -11,6 +12,13 @@ const toggleModalFade = () => fade.classList.toggle("hidden");
 const toggleModalFadeMenu = () => fade.classList.toggle("hidden");
 const toggleModalLogin = () =>modal_login.classList.toggle("hidden");
 const toggleModalMenu = () => modal_menu.classList.toggle("hidden");
+modal_menu.addEventListener('click', e => {
+    btn = e.target.tagName;
+    if(btn == 'A'){
+        var href = e.target.getAttribute('href')
+        window.location.href = href
+    }
+    })
 btn_login_header.addEventListener("click",()=> {
     toggleModalLogin();
     toggleModalFade()});
@@ -25,14 +33,14 @@ const toggleSection = () =>{
 }
 // carregando section e dependencias automaticamente
 if(btn_section_jg.classList.contains("action")){
-    addSectionJogos(btn_section_jg);
+    addSectionBets(btn_section_jg);
 }
 // event click section principal.
 [btn_section_apostas,btn_section_jg].forEach( (e)=>{
     e.addEventListener("click",()=>{
         e.target;
         if(e.classList.contains('btn-section-jogos')){
-            addSectionJogos(e)
+            addSectionBets(e)
             if(e.classList.contains("action")){return}
             toggleSection();
         }
@@ -43,11 +51,11 @@ if(btn_section_jg.classList.contains("action")){
         }
     });
 });
-async function addSectionJogos(e){
+async function addSectionBets(e){
     await carregarSection(e);
     reniciandoDependencias();
     script = document.createElement('script');
-    script.src = 'assets/js/dependencias-section-jogos.js';
+    script.src = 'assets/js/bets/index.js';
     script.async = true;
     document.body.appendChild(script);
 }
@@ -55,7 +63,7 @@ async function addSectionMinhasApostas(e){
     await carregarSection(e);
     reniciandoDependencias();
     script = document.createElement('script');
-    script.src = 'assets/js/my-bets.js';
+    script.src = 'assets/js/my-bets/index.js';
     script.async = true;
     document.body.appendChild(script);
 }
@@ -78,7 +86,7 @@ function reniciandoDependencias(){
     var scripts = document.querySelectorAll('script');
     scripts.forEach(e =>{
         let parentElement = e.parentNode;
-        // Remova o elemento <script> do pai
+        // Remova todos os elementos <script> filhos do pai
         parentElement.removeChild(e);
     })
 }

@@ -20,6 +20,7 @@ function carregarValores(){
 
 var btn_down = document.querySelectorAll('.down-apost'); 
 var btn_up = document.querySelectorAll('.up-apost'); 
+
 btn_down.forEach(e=>
     e.addEventListener('click',i =>{
         var el = i.target;
@@ -61,3 +62,7 @@ btnUpModal.addEventListener('click',() =>{
         if (num >= 0) {infQtdModal.innerHTML = num + 1;carregarValores();}
     });
 
+// placing a bet.
+var form_to_bet = document.getElementById('formToBet');
+var btn_to_bet = document.getElementById('btn-confirmar');
+btn_to_bet.addEventListener('click',() => window.location.href =form_to_bet.action)
