@@ -1,0 +1,99 @@
+*{margin: 0;padding: 0;}
+@font-face {
+    font-family:'Ubuntu' ;
+    src: url('../../fonts/Ubuntu-Regular.ttf');
+}
+header{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 7vh;
+    background-color: #232323f8;
+    color: aliceblue;
+    align-items: center;
+    justify-content: center;
+    padding: 1vh;
+    z-index: 2;
+}
+header h1 a{
+    color: #FFF;
+    font-family: 'Ubuntu';
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    width: 100%;
+    text-decoration: none;
+}
+main{
+    display:flex;
+    font-family: 'Ubuntu';
+    position: relative;
+    width: 100%;
+    top: 10vh;
+    justify-content: center;
+}
+main #conteudo{
+    display: flex;
+    width: 60vh;
+    margin-top: 5vh;
+    border: none;
+    box-shadow: 0 0 0.8vh 0.1vh #d6d6d69e;
+}
+.formContent{
+    display: block;
+    width: 45%;
+    padding: 5%;
+
+
+}
+.infoContent{
+    display: block;
+    width: 45%;
+    padding: 5%;
+    background-color: #f8f8ff;
+}
+.infoContent h2,p{margin-bottom: 4vh;}
+.infoEmail,.infoNumber{
+    display: block;
+    align-items: center;
+    margin-bottom: 2vh;
+    font-size: 1.1em;
+    color: #444;
+}
+.material-symbols-outlined{
+    border: none;
+    box-shadow: 0 0 2px 0 #999999d7;
+    color: #333;
+    background-color: #fff;
+    padding: 1.3vh;
+    border-radius: 2em;
+    margin-right: 2%;
+}
+
+.formContent form input,textarea{
+    display: block;
+    width: 96%;
+    padding: 2%;
+    margin-bottom: 2vh;
+    border: none;
+    border-bottom: 1px solid #ececec;
+    outline: none;
+}
+.formContent h3{
+    margin-bottom: 4vh;
+    color: #333;
+}
+input:focus, textarea:focus{
+    box-shadow: 0px 1px 0px 0px #0274d8b2;
+
+}
+#btnEnviar{
+    background-color: #5cb85c;
+    margin: 0 auto;
+    border-radius: 2em;
+    color: #f8f8f8;
+    text-transform: uppercase;
+    font-family:Calibri, 'Trebuchet MS', sans-serif ;
+    font-size: 1.1em;
+    box-shadow: 0px 0px 3px 1px #99999967;
+}
+#btnEnviar:active{background-color: #52a652;}

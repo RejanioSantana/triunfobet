@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triunfo Bet</title>
+    <link rel="stylesheet" href="../../css/_contact/index.css">
+    <link rel="stylesheet" href="../../css/_contact/mobile.css" 
+    media="screen and (max-width: 700px)">
+    <link rel="stylesheet" 
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <header><h1><a href="../../../index.html">Triunfo Bet</a></h1></header>
+    <main id="mainCenter">
+        <div id="conteudo">
+            <div class="formContent">
+                <h3>Envie sua mensagem</h3>
+                <form action="./success.html" id="formContact" method="get">
+                    <input type="text" id="name"  
+                    placeholder="Nome" name="name"
+                    maxlength="45" pattern="[a-zA-Zs]+$" 
+                    autocomplete="off" required>
+
+                    <input type="text" id="email" 
+                    placeholder="Email" name="email"
+                    maxlength="45" pattern="[a-zA-Zs]+$" 
+                    autocomplete="off" required>
+
+                    <input type="text" id="subject" 
+                    placeholder="Assunto" name="subject"
+                    maxlength="45" pattern="[a-zA-Zs]+$" 
+                    autocomplete="off" required>
+
+                    <textarea name="message" id="message"
+                    placeholder="Mensagem"
+                    cols="30" rows="10" 
+                    autocomplete="off" required></textarea>
+
+                    <input type="submit" id="btnEnviar" value="Enviar">
+                </form>
+
+            </div>
+            <div class="infoContent">
+                <h2>Contate-nos</h2>
+                <p>Estamos abertos para qualquer sugestão ou apenas para bater um papo</p>
+                <div class="infoNumber">
+                    <span class="material-symbols-outlined">
+                    call
+                    </span> (75) 99716-9490
+                </div>
+                <div class="infoEmail"><span class="material-symbols-outlined">
+                    mail
+                    </span>contato@triunfobet.com.br</div>
+            </div>
+        </div>
+    </main>
+    <script src="../../js/contact/index.js"></script>
+</body>
+</html>
