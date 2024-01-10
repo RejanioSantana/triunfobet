@@ -4,7 +4,7 @@ main{
     top:7vh;
     height: 93vh;
     justify-content: center;
-    background-color: #ececec;
+    background-color: #ffffff;
 }
 .section-conteudo{
     position: relative;
@@ -25,7 +25,8 @@ a{text-decoration: none;}
 }
 .info-modalidade{
     display: flex;
-    background-color: #FFF;
+    background-color: #ffffff;
+    box-shadow: 0 0 5px 1px #b5b5b5a1;
     padding: 10px;
     margin-top: 20px;
     list-style: none;

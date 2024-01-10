@@ -1,97 +1,75 @@
-<div class="fade-bolao hidden"></div>
-<div class="modal-bet hidden">
-    <form action="./assets/html/bets/_pix/index.html" method="post" id="formToBet">
-        <input type="hidden" name="mld-bolao" value="10">
-        <input type="hidden" name="client-id" value="027">
-        <input type="hidden" name="vlr-apost" id="frm-vlr-bolao" value="10">
-        <input type="hidden" name="qtd-casa" id="frm-casa" value="2">
-        <input type="hidden" name="qtd-fora" id="frm-fora" value="1">
-        <ul>
-            <li class="li-tr">Placar <ul>
-                <li id="frm-placar"></li>
-            </ul></li>
-            <li class="li-tr">Qtd <ul>
-                <li class="down-modal-bet">-</li>
-                <li class="qtd-modal-bet"></li>
-                <li class="up-modal-bet">+</li>
-            </ul></li>
-            
-            <li class="li-tr">Total <ul>
-                <li id="total-modal-bet">R$ 20,00</li>
-            </ul></li>
-        </ul>
-        <input type="submit" value="Confirmar" id="btn-confirmar">
-    </form>
-</div>
-<section class="section-conteudo">
-    <section class="area-bolao area-10">
-        <div class="area-status">
-            <div class="info">
-                <h2>Status</h2>
-                <button>Detalhes</button>
-            </div>
-            <table class="tb-status-bolao">
-                <thead>
-                    <tr>
-                        <th>Placar</th>
-                        <th>Pessoas</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="itens">
-                        <td>0-1</td>
-                        <td>10</td>
-                    </tr>
-                    <tr class="itens">
-                        <td>2-0</td>
-                        <td>6</td>
-                    </tr>
-                    <tr class="itens">
-                        <td>1-1</td>
-                        <td>3</td>
-                    </tr>
-                    <tr class="itens">
-                        <td>4-1</td>
-                        <td>2</td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <th>Total Participantes</th>
-                        <td>102</td>
-                    </tr>
-                    <tr>
-                        <th>Total Arrecadado</th>
-                        <td>R$510,00</td>
-                    </tr>
-                </tfoot>
-            </table>
-        </div>
+<div class="content">
+    <div class="betInfo">
+        <div class="infoTeams">
+                <a href="../../../../index.html">
+                    <span class="material-symbols-outlined iconClose">
+                        arrow_back_ios_new
+                    </span>
+                </a>
+                <div class="descTeams">
 
-        <div class="div-form-apostar">
-            <h2>ESCOLHA SEU PLACAR</h2>
-            <div class="main-info"> 
-                <div class="selecoes-info">
-                    <h3>Quijingue</h3>
-                    <h3>Itapetinga</h3>
+                    <div class="Teams">Quijingue</div>
+                    <div class="Teams v">v</div>
+                    <div class="Teams">Itamaraju</div>
                 </div>
+                
+        </div>
+        <div class="infoCamp">01 fev 17:00</div>
+    </div>
+    <section class="betSection">
+        <details class="bets" open>
+            <summary>Resultado Final</summary>
+            <div class="oddsBet">
+                <ul class="resultFinallyOdds">
+                    <li class="oddsBetName">Quijingue<span class="oddNum">2.20</span></li>
+                    <li class="oddsBetName marketOdd">Empate<span class="oddNum">1.60</span></li>
+                    <li class="oddsBetName">Itamaraju<span class="oddNum">2.20</span></li>
+                </ul>
+            </div>
+        </details>
+        <details class="bets" open>
+            <summary>Resultado Correto</summary>
+            <div class="correctResult">
                 <div class="area-info-apost">
-                    <div class="info-apost casa">
-                        <div class="down-apost">-</div>
-                        <div class="qtd-apost" id="num-casa">0</div>
-                        <div class="up-apost">+</div>
-        
-                    </div>
+                    <h3>Quijingue</h3>
                     <div class="info-apost fora">
                         <div class="down-apost">-</div>
                         <div class="qtd-apost" id="num-fora">0</div>
                         <div class="up-apost">+</div>
                     </div>
                 </div>
+                <div class="area-info-apost">
+                    <h3>Itamaraju</h3>
+                    <div class="info-apost casa">
+                        <div class="down-apost">-</div>
+                        <div class="qtd-apost" id="num-casa">0</div>
+                        <div class="up-apost">+</div>
+                    </div>
+                </div>
+                
             </div>
-            <form >
-                <input type="submit" value="Apostar" id="btn-apostar">
-            </form>
-        </div>
+            <div class="oddCorrectResult "><span class="oddNum">4.5</span></div>
+            
+        </details>
     </section>
-</section>
+</div>
+<div class="modalOddFinally">
+    <div class="infoModalFinally">
+        <div class="infoTypeBetModal">
+            <span class="material-symbols-outlined closeTypeBetModal">
+                close
+            </span>
+            <div class="infoNameTypeBetModal">
+                <h3>Empate <span class="oddNum">1.60</span></h3>
+                <p>Resultado Final</p>
+            </div>
+        </div>
+    </div>
+    <div class="valuesModalFinally">
+        <input type="text" id="inputOddModalFinally" placeholder="Valor de Aposta">
+        <div id="btnBetModalFinally">Fazer Aposta</div>
+    </div>
+</div>
+
+
+

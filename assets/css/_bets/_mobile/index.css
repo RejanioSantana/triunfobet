@@ -1,0 +1,220 @@
+.content{
+    position: relative;
+    border:none;
+    top: 0vh;
+    width: 100%;
+    padding: 0vh;
+}
+
+.betInfo{
+    background-color: #333;
+    display: block;
+    width: 97.7%;
+    padding: 0.5vh;
+
+}
+.infoTeams{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 0.08vh solid #ffffffa7;
+    padding: 0.5vh;
+    width: 97%;
+
+}
+.infoTeams a{
+    position: absolute;
+    display: block;
+    left: 1%;
+    color: #FFF;
+    width: 7%;
+}
+.infoTeams .descTeams{
+    display: flex;
+}
+.Teams{
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0.5vh;
+    color: #FFF;
+}
+.Teams.v{text-transform: lowercase;}
+
+.betInfo .infoCamp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    background-color: #006a25a5;
+    background-image:url("../../../img/camp2.png");
+    width: 90%;
+    height: 20vh;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    margin: auto;
+    margin-top: 1vh;
+}
+
+.betSection{
+
+    position: relative;
+    border:none;
+    top: 1vh;
+    width: 90%;
+    margin: auto;
+}
+.bets{
+    background-color: #555;
+    box-shadow: 0 0 5px 1px #a5a5a5b9;
+    border: none;
+    border-radius: 0.3em;
+    margin-bottom: 1vh;
+    color: #FFF;   
+}
+.bets summary{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    padding: 1vh 0;
+    padding-left: 1vh;
+    margin: auto;
+}
+.bets .oddsBet{
+    margin-top: 1vh;
+}
+.bets .oddsBet .resultFinallyOdds {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-top: 0.1vh solid #f8f8fa;
+}
+.bets .oddsBet .resultFinallyOdds .oddsBetName{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33%;
+    min-height: 5vh;
+    text-align: center;
+}
+.oddNum{
+    color: #ffd700; 
+    font-size: 1.1em;
+}
+.marketOdd{background-color: #ececec;color: #333;}
+.marketOdd .oddNum{
+    color:#d2b200;
+}
+.oddsBetName .oddNum{
+    margin-left: 5% ;
+}
+.correctResult{
+    display: flex; 
+    width: 100%;
+}
+.area-info-apost{
+    text-align: center;
+    width: 50%;
+}
+.area-info-apost h3{margin-bottom: 0.5vh;}
+.area-info-apost .info-apost{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5vh;
+}
+.up-apost ,.qtd-apost, .down-apost{
+    border: 1px solid #777	;
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    color: #5cb85c;
+    font-weight:400;
+    font-family:sans-serif;
+}
+.up-apost , .down-apost{
+    box-shadow: 0px 0px 3px  0.1px #54545471;
+    border-radius: 0.1em;
+}
+.up-apost:active, .down-apost:active{
+    background-color: #0275d8;
+    color: #fff;
+}
+.qtd-apost{
+    border: none;
+    color: #FFF;
+    font-weight:400;
+    font-size: 1.5em;
+}
+.oddCorrectResult{
+    padding: 4%;
+    width: 92%;
+    text-align: center;
+    border-top: 0.1vh solid #f8f8fa;
+}
+
+/* modal */
+
+.modalOddFinally{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    height: 15vh;
+    width: 100%;
+    box-shadow: 0 0 0.5vh 0.1vh #03030386;
+}
+.infoModalFinally,.valuesModalFinally{display: flex;width: 100%;}
+.infoModalFinally{height: 62%;background-color: #f8f8ff;}
+.valuesModalFinally{height: 38%;background-color: #7d7d7d;}
+.infoTypeBetModal{display: flex;width: 100%;height: 100%;padding-top: 1vh;}
+.closeTypeBetModal{width: 10%;text-align: center;}
+.infoNameTypeBetModal .oddNum{margin-left: 1vh;}
+#inputOddModalFinally, #btnBetModalFinally{width: 46%;padding: 2%;font-size: 1.2em;}
+#inputOddModalFinally::placeholder{
+    color: #009f3c;
+}
+#inputOddModalFinally{
+    border: none;
+    background-color: #333;
+    color: #009f3c;
+    font-family: Geneva, Tahoma, sans-serif;
+}
+#btnBetModalFinally{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Geneva, Tahoma, sans-serif;
+    color: #c3c3c3;
+}
+
+@media only screen and (min-width:320px) {
+    .betInfo .infoCamp{height: 25vh;}
+    .betSection{width: 98%;}
+    .bets{font-size: 0.9em;}
+    .modalOddFinally{height: 20vh;}
+
+}
+@media only screen and (min-width:360px) {
+    .betSection{width: 93%;}
+}
+@media only screen and (min-width:390px) {
+    .modalOddFinally{height: 18vh;}
+}
+@media only screen and (min-width:412px) {
+    .betInfo .infoCamp{height: 23vh;}
+}
+@media only screen and (min-width:412px) {
+    .betInfo .infoCamp{height: 23vh;}
+}
+@media only screen and (min-width:430px) {
+    .betInfo .infoCamp{width: 33vh;height: 20vh;}
+    .betSection{width: 38vh;}
+    .bets{font-size: 1em;}
+    .modalOddFinally{
+        width: 40vh;
+        height: 15vh;
+    }
+}
+@media only screen and (min-width:530px) {.betSection{width: 70%;}}

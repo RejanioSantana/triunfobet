@@ -1,0 +1,83 @@
+/* Tablets */
+.Teams.v{margin: 0% 2%;}
+@media only screen and (min-width:600px) {
+    #main-central{background-color: #ececec;}
+    .content{
+        display:flex;
+        width: 90%;
+        height: auto;}
+    .betInfo{
+        position: absolute;
+        display: block;
+        top: 1vh;
+        left: 1%;
+        border: none;
+        border-radius: 0.5em;
+        padding: 1%;
+        width: 35%;
+        height: 16vh;
+        font-size: 0.7em;
+    
+    }
+    .infoTeams a{display: none;}
+    .Teams{margin: 0%;}    
+    .betInfo .infoCamp{
+        position: relative;
+        display: flex;
+        width: 100%;
+        height:80%;
+        margin:0;
+        margin-top: 1%;
+    }
+  
+    /* ********************************** */
+    .betSection{
+        position: absolute;
+        display:block;
+        top: 1vh;
+        right: 1%;
+        width: 45%;
+        margin: auto;
+    }
+
+    .bets{font-size: 0.7em;}
+    .modalOddFinally{
+        width: 40vh;
+        height: 13vh;
+        font-size: 0.8em;
+    }
+}
+@media only screen and (min-width:760px){.bets{font-size: 0.8em;}}
+@media only screen and (min-width:800px){.bets{font-size: 0.9em;}}
+@media only screen and (min-width:850px){
+    .betInfo{
+        padding: 1%;
+        width: 33%;
+        height: 16vh;
+        font-size: 0.7em;
+    }
+}
+/* Desktops */
+@media only screen and (min-width:900px){
+    .content{
+        display:flex;
+        width: 75%;
+        height: auto;}
+    .betInfo{
+        padding: 1%;
+        width: 30%;
+        height: 20vh;
+        font-size: 0.9em;
+    
+    }
+    .bets{font-size: 0.9em;}
+}
+@media only screen and (min-width:1050px){.content{ width: 70%;}}
+@media only screen and (min-width:1100px){.content{ width: 65%;}}
+@media only screen and (min-width:1200px){.content{ width: 60%;}}
+@media only screen and (min-width:1300px){.content{ width: 55%;}}
+@media only screen and (min-width:1300px){.content{ width: 53%;}.betInfo{height: 18vh;}}
+@media only screen and (min-width:1400px){.betInfo{height: 18vh;}.content{ width: 50%;}}
+@media only screen and (min-width:1600px){.betInfo{height: 16vh;}.content{ width: 50%;}}
+@media only screen and (min-width:1750px){.betInfo{height: 14vh;}.content{ width: 45%;}}
+@media only screen and (min-width:1850px){.betInfo{height: 14vh;}.content{ width: 40%;}}
