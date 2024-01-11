@@ -1,3 +1,4 @@
+@import url("./_mobile/index.css");
 .fade-my-bets, .modal-my-bets{
     transition: 0.5s;
     opacity: 1;
@@ -72,14 +73,13 @@
     list-style: none;
     justify-content: center;
     align-items: center;
-    padding: 4% 1%;
     border: none;
     border-radius: 0.20em;
     box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.11);
     transition: 0.5s;
 }
 .list-bets a:active{background-color: #f2f2f2;}
-.list-bets li{ width: 25%;font-size: 1.3em;}
+
 .list-bets.info a{border: 1px solid #f0ad4e;}
 .list-bets.won a{border: 1px solid #5cb85c;}
 .list-bets.lost a{border: 1px solid #d9534f;}

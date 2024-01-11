@@ -1,0 +1,6 @@
+@media only screen and (min-width:320px) {
+    .list-bets a{
+        padding: 1.5% 1%;
+    }
+    .list-bets li{ width: 25%;font-size: 1em;}
+}

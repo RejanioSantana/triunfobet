@@ -1,4 +1,5 @@
 @import url("./../_bets/_bet-modality/index.css");
+@import url("./../_my-bets/index.css");
 main{
     display: flex;
     position: relative;
