@@ -14,9 +14,8 @@ main{
     justify-content: center;
 }
 main #conteudo{
-    width: 92%;
     padding: 2%;
-    box-shadow: 0 0 0.8vh 0.1vh #999;
+    box-shadow: 0 0 0.8vh 0.1vh #bebebe7c;
 }
 #moneyInfo{
     display: flex;
@@ -56,6 +55,8 @@ main #conteudo{
 #btn{
     background-color: #5cb85c;
     border: none;
+    padding: 2%;
+    font-size: 1em;
     box-shadow: 0 0 0.8vh 0vh #999999cb;
     color: #f3f3f3;
 
@@ -99,3 +100,9 @@ main #conteudo{
     font-size: 2em;
     color: #5555557a;
 }
+
+@media only screen and (min-width:320px){main #conteudo{width: 92%;}}
+@media only screen and (min-width:600px){main #conteudo{width: 65%;}}
+@media only screen and (min-width:900px){main #conteudo{width: 50%;}}
+@media only screen and (min-width:1100px){main #conteudo{width: 35%;}}
+@media only screen and (min-width:1800px){main #conteudo{width: 25%;}}
