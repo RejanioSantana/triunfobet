@@ -1,0 +1,79 @@
+.section-conteudo{
+    position: relative;
+    width: 90%;
+}
+a{text-decoration: none;}
+.modalidades-jogos{
+    list-style: none;
+}
+.title-modalidade{
+    font-family: sans-serif;
+    text-align: left;
+    font-weight: 600
+}
+.info-modalidade{
+    display: flex;
+    background-color: #ffffff;
+    box-shadow: 0 0 5px 1px #b5b5b5a1;
+    list-style: none;
+    text-align: left;
+    font-weight: 200;
+    border: none;
+    border-radius: 0.5em;
+    align-items: center;
+    justify-content: center;
+}
+.info-modalidade li{display: block;}
+.dsc-info{
+    margin-right: auto;
+    font-family:sans-serif;
+    font-weight: 600;
+    color: #444;
+}
+/* Responsive */
+@media only screen and (min-width:320px) {
+    .section-conteudo{
+        width: 90%;
+    }
+    .modalidades-jogos{
+        width: 100%;
+        margin-top: 2vh;
+    }
+    .title-modalidade{font-size: 1.2rem;}
+    .info-modalidade{
+        padding: 2%;
+        margin-top: 3%;
+        font-size: 0.8rem;
+    }
+    .btn-info span{
+        font-size: 1.5em;
+        color: #444;
+    }
+}
+@media only screen and (min-width:360px) {
+    .section-conteudo{width: 90%;}
+    .modalidades-jogos{width: 100%;}
+    .title-modalidade{font-size: 1.2rem;}
+    .info-modalidade{font-size: 0.9em;}
+    .btn-info span{font-size: 1.5em;}
+}
+@media only screen and (min-width:420px) {
+    .section-conteudo{width: 85%;}
+}
+@media only screen and (min-width:600px) {
+    .section-conteudo{width: 75%;}
+}
+@media only screen and (min-width:900px) {
+    .section-conteudo{width: 60%;}
+}
+@media only screen and (min-width:1100px) {
+    .section-conteudo{width: 50%;}
+    .title-modalidade{font-size: 0.9em;}
+    .info-modalidade{
+        padding: 2%;
+        margin-top: 3%;
+        font-size: 1em;
+    }
+}
+@media only screen and (min-width:1170px) {.section-conteudo{width: 45%;}}
+@media only screen and (min-width:1300px) {.section-conteudo{width: 40%;}}
