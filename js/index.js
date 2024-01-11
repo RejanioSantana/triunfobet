@@ -55,7 +55,7 @@ async function addSectionBets(e){
     await carregarSection(e);
     reniciandoDependencias();
     script = document.createElement('script');
-    script.src = 'assets/js/bets/index.js';
+    script.src = 'js/bets/index.js';
     script.async = true;
     document.body.appendChild(script);
 }
@@ -63,7 +63,7 @@ async function addSectionMinhasApostas(e){
     await carregarSection(e);
     reniciandoDependencias();
     script = document.createElement('script');
-    script.src = 'assets/js/my-bets/index.js';
+    script.src = 'js/my-bets/index.js';
     script.async = true;
     document.body.appendChild(script);
 }
