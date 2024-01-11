@@ -1,0 +1,22 @@
+header{
+    display: flex;
+    position: fixed;
+    width: 100%;
+
+    background-color: #232323f8;
+    color: aliceblue;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    z-index: 2;
+}
+header h1 a{
+    color: #FFF;
+    font-family: 'Ubuntu';
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    width: 100%;
+    text-decoration: none;
+}
+@media only screen and (min-width:320px){header{height: 6vh;}}
+@media only screen and (min-width:900px){header{height: 4vh;}}
